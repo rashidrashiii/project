@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 from . info import *
 import os
-SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 
 #DEBUG = False
 # delete TEMPLATE_DEBUG = DEBUG
@@ -139,7 +138,7 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-try:
-  from local_settings import *
-except ImportError:
-  pass
+# try:
+#   from local_settings import *
+# except ImportError:
+#   pass
