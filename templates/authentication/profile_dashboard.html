@@ -1,0 +1,3031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+
+    <title>Dashboard &mdash;  {{fname}} </title>
+
+
+
+
+    <!--
+    |--------------------------------------------------------------------------
+    | FAVICON ICON
+    |--------------------------------------------------------------------------
+    -->
+    <link rel="shortcut icon"
+                            href="https://websolutionus.com/cc/profiletop/assets/img/profile/user/1640143987-84349.png"
+            type="image/x-icon">
+
+
+
+
+    <!--
+    |--------------------------------------------------------------------------
+    | CSS
+    |--------------------------------------------------------------------------
+    -->
+
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/fontawesome/css/all.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/select2.min.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/bootstrap-colorpicker.min.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/dataTables.bootstrap4.min.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/iziToast.min.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/css/bootstrap-tagsinput.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/bootstrap-icons/font/bootstrap-icons.css" type="text/css">
+
+
+    <!--
+    |--------------------------------------------------------------------------
+    | TEMPLATE CSS
+    |--------------------------------------------------------------------------
+    -->
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/css/style.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/css/components.css">
+
+
+
+
+    <!--
+    |--------------------------------------------------------------------------
+    | RTL CSS
+    |--------------------------------------------------------------------------
+    -->
+    
+
+
+
+    <!--
+    |--------------------------------------------------------------------------
+    | THEME CSS
+    |--------------------------------------------------------------------------
+    -->
+            <style>
+    :root { --primary:  #2046DA !important; }
+
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: #2046DA !important;
+    }
+
+    a {
+        color: #2046DA }
+
+    .bg-primary {
+        background-color: #2046DA !important; }
+
+    .text-primary, .text-primary-all *, .text-primary-all *:before, .text-primary-all *:after {
+        color: #2046DA !important; }
+
+    .bootstrap-tagsinput {
+        border: 2px solid #ced4da;
+    }
+
+    .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+    .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #2046DA !important; }
+
+    .custom-file-input:focus + .custom-file-label {
+        border-color: #2046DA !important; }
+
+    .selectgroup-input:checked + .selectgroup-button {
+        background-color: #2046DA !important; }
+
+    .custom-switch-input:checked ~ .custom-switch-indicator {
+        background: #2046DA !important; }
+
+    .custom-switch-input:focus ~ .custom-switch-indicator {
+        border-color: #2046DA !important; }
+
+    .imagecheck-input:focus ~ .imagecheck-figure {
+        border-color: #2046DA !important; }
+
+    .imagecheck-figure:before {
+        background: #2046DA url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") no-repeat center center/50% 50%; }
+
+    .section .section-title:before {
+        background-color: #2046DA !important; }
+
+    .card .card-header h4 {
+        color: #2046DA !important; }
+
+    .card .card-header h4 + .card-header-action .btn.active,
+    .card .card-header h4 + .card-header-form .btn.active {
+        box-shadow: #2046DA;
+        background-color: #2046DA !important; }
+
+    .card.card-primary {
+        border-top: 2px solid #2046DA !important; }
+
+    .card.card-hero .card-header {
+        background-image: linear-gradient(to bottom, #2046DA, #2046DA); }
+
+    .list-group-item.active {
+        background-color: #2046DA !important; }
+
+    .list-group-item-primary {
+        background-color: #2046DA !important; }
+
+    .navbar-bg {
+        background-color: #2046DA !important; }
+
+    .btn-primary, .btn-primary:hover {
+        background-color: #2046DA !important; }
+
+    .alert.alert-primary {
+        background-color: #2046DA !important; }
+
+    .nav-tabs .nav-item .nav-link {
+        color: #2046DA !important; }
+
+    .nav-pills .nav-item .nav-link {
+        color: #2046DA }
+
+    .nav-pills .nav-item .nav-link.active {
+        box-shadow: none !important;
+        background-color: #2046DA !important; }
+
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        background-color: #2046DA !important; }
+
+    .page-item .page-link {
+        color: #2046DA !important; }
+
+    .page-item.active .page-link {
+        background-color: #2046DA !important;
+        color: #ffffff !important;
+        border-color: #2046DA !important; }
+
+    .page-item.disabled .page-link {
+        color: #2046DA !important; }
+
+    .page-link:hover {
+        background-color: #2046DA !important;
+        color: #ffffff !important;}
+
+    .badge.badge-primary {
+        background-color: #2046DA !important; }
+
+    .btn-primary, .btn-primary.disabled {
+        box-shadow: 0 2px 6px rgba(32,70,218, 0.5);
+        background-color: #2046DA !important;
+        border-color: #2046DA !important; }
+
+    .btn-primary:focus, .btn-primary.disabled:focus {
+        background-color: rgba(32,70,218, 0.9) !important; }
+
+    .btn-primary:focus:active, .btn-primary.disabled:focus:active {
+        background-color: rgba(32,70,218, 0.9) !important; }
+
+    .btn-primary:active, .btn-primary:hover, .btn-primary.disabled:active, .btn-primary.disabled:hover {
+        background-color: rgba(32,70,218, 0.9) !important; }
+
+    .btn-outline-primary, .btn-outline-primary.disabled {
+        border-color: rgba(32,70,218, 0.5);
+        color: rgba(32,70,218, 0.5); }
+    .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.disabled:hover, .btn-outline-primary.disabled:focus, .btn-outline-primary.disabled:active {
+        background-color: rgba(32,70,218, 0.5) !important;}
+
+    .btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white:active, .btn-outline-white.disabled:hover, .btn-outline-white.disabled:focus, .btn-outline-white.disabled:active {
+        color: rgba(32,70,218, 0.5); }
+
+    .select2-container .select2-selection--multiple, .select2-container .select2-selection--single {
+        border: 2px solid #ced4da
+    }
+
+    .select2-dropdown {
+        border: 2px solid #2046DA !important;
+    }
+
+    .select2-container.select2-container--open .select2-selection--single {
+        border: 2px solid #2046DA !important;
+        border-bottom: 0px !important;
+    }
+
+    .select2-container.select2-container--open .select2-selection--multiple {
+        border: 2px solid #2046DA !important; }
+
+    .select2-container.select2-container--focus .select2-selection--multiple, .select2-container.select2-container--focus .select2-selection--single {
+        border: 2px solid #2046DA !important; }
+
+    .form-control, .input-group-text, .custom-select, .custom-file-label {
+        border: 2px solid #ced4da;
+        border-left: 1px solid #ced4da; !important;
+    }
+
+    .form-group.floating-addon .input-group-prepend .input-group-text, .form-group.floating-addon .input-group-append .input-group-text {
+        border: 2px solid #2046DA !important; }
+
+    .input-group-text:focus {
+        border: 2px solid #2046DA !important; }
+
+    .select2-container--default .select2-search--dropdown .select2-search__field {
+        border: 1px solid #2046DA !important; }
+
+    .media .media-right {
+        color: #2046DA !important; }
+
+    .accordion .accordion-header[aria-expanded="true"] {
+        box-shadow: none !important;
+        background-color: #2046DA !important; }
+
+    .navbar.active {
+        background-color: #2046DA !important; }
+
+    .nav-collapse .navbar-nav .nav-item .nav-link:hover {
+        background-color: #2046DA !important; }
+
+    .nav-collapse .navbar-nav .nav-item:focus > a, .nav-collapse .navbar-nav .nav-item.active > a {
+        background-color: #2046DA !important; }
+
+    a.dropdown-item:focus, a.dropdown-item:active, a.dropdown-item.active {
+        background-color: #2046DA !important; }
+
+    .dropdown-list .dropdown-item:focus {
+        background-color: #2046DA !important; }
+
+    .dropdown-flag .dropdown-item.active {
+        background-color: #2046DA !important; }
+
+    ul.nav-tabs li.nav-item a.nav-link i {
+        color: #2046DA !important; }
+
+    .progress-bar {
+        background-color: #2046DA !important; }
+
+    a.bb {
+        border-bottom: 1px solid #2046DA !important; }
+
+    .circle-step .circle.circle-primary {
+        border-color: #2046DA !important;
+        color: #2046DA !important; }
+
+    .section .section-header .section-header-back .btn:hover {
+        background-color: #2046DA !important; }
+
+    body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a {
+        box-shadow: none !important;
+        background-color: #2046DA !important; }
+
+    body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li > a:focus,
+    body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li.active > a,
+    body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li.active > a:hover {
+        background-color: #2046DA !important; }
+
+    body.layout-2 .main-sidebar .sidebar-menu li a:hover {
+        color: #2046DA !important; }
+
+    body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item.active > .nav-link {
+        color: #2046DA !important; }
+
+    body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item > .nav-link:before {
+        background-color: #2046DA !important; }
+
+    body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item .dropdown-menu .nav-item.active > .nav-link,
+    body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item .dropdown-menu .nav-item .nav-link:focus {
+        background-color: #2046DA !important; }
+
+    .main-sidebar .sidebar-menu li.active a {
+        color: #2046DA }
+
+    .main-sidebar .sidebar-menu li ul.dropdown-menu li a:hover {
+        color: #2046DA !important; }
+
+    .main-sidebar .sidebar-menu li ul.dropdown-menu li.active > a {
+        color: #2046DA !important; }
+
+    body:not(.sidebar-mini) .sidebar-style-1 .sidebar-menu li.active a {
+        background-color: #2046DA !important; }
+
+    body:not(.sidebar-mini) .sidebar-style-1 .sidebar-menu li.active ul.dropdown-menu li a:hover {
+        background-color: #2046DA !important; }
+
+    body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu > li.active > a:before {
+        background-color: #2046DA !important; }
+
+    .chat-box .chat-content .chat-item.chat-right .chat-details .chat-text {
+        background-color: #2046DA !important; }
+
+    .ranges li {
+        color: #2046DA !important; }
+
+    .ranges li:hover, .ranges li.active {
+        background-color: #2046DA !important; }
+
+    .daterangepicker td.active, .daterangepicker td.active:hover {
+        background-color: #2046DA !important; }
+
+    .dropzone {
+        border: 2px dashed #2046DA !important; }
+
+    .fc button.fc-state-active {
+        background-color: #2046DA !important; }
+
+    .jqvmap-circle {
+        border: 3px solid #2046DA !important; }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice,
+    .select2-container--default .select2-results__option[aria-selected=true],
+    .select2-container--default .select2-results__option--highlighted[aria-selected] {
+        background-color: #2046DA !important; }
+
+    .selectric-open .selectric {
+        border-color: #2046DA !important; }
+
+    .selectric-items li.selected, .selectric-items li.highlighted {
+        background-color: #2046DA !important; }
+
+    .swal-button.swal-button--confirm {
+        box-shadow: 0 2px 6px #2046DA !important;
+        background-color: #2046DA !important; }
+
+    .bootstrap-tagsinput .tag {
+        background-color: #2046DA !important; }
+
+    .bootstrap-tagsinput:focus {
+        border-color: #2046DA !important; }
+
+    .weather ul li {
+        border: 2px solid #2046DA !important;
+        color: #2046DA !important; }
+
+    .tickets .ticket-items .ticket-item:hover .ticket-title {
+        color: #2046DA !important; }
+
+    .tickets .ticket-items .ticket-item.active {
+        box-shadow: 0 2px 6px #2046DA !important;
+        border-radius: 3px;
+        background-color: #2046DA !important; }
+
+    .owl-theme .owl-dots .owl-dot.active span {
+        background-color: #2046DA !important; }
+
+    .activities .activity:before {
+        background-color: #2046DA !important; }
+
+    .empty-state .empty-state-icon {
+        background-color: #2046DA !important; }
+
+    .pricing.pricing-highlight .pricing-title {
+        background-color: #2046DA !important;
+        color: #ffffff !important;}
+
+    .pricing.pricing-highlight .pricing-cta a {
+        background-color: #2046DA !important; }
+
+    .pricing.pricing-highlight .pricing-cta a:hover {
+        background-color: #2046DA !important; }
+
+    .pricing .pricing-title {
+        color: #2046DA !important; }
+
+    .avatar {
+        background: #2046DA !important; }
+
+    .wizard-steps .wizard-step.wizard-step-active {
+        box-shadow: 0 2px 6px #2046DA !important; }
+    background-color: #2046DA !important; }
+
+    .wizard-steps .wizard-step.wizard-step-active:before {
+        background-color: #2046DA !important; }
+
+    textarea:focus,
+    textarea.form-control:focus,
+    select:focus,
+    select.form-control:focus,
+    select.form-control.select2:focus,
+    input.form-control:focus,
+    input[type=text]:focus,
+    input[type=password]:focus,
+    input[type=email]:focus,
+    input[type=number]:focus,
+    [type=text].form-control:focus,
+    [type=password].form-control:focus,
+    [type=email].form-control:focus,
+    [type=tel].form-control:focus,
+    [contenteditable].form-control:focus {
+        /*box-shadow: inset 0 -1px 0 #e07777;*/
+        outline: none;
+        box-shadow:none !important;
+        border:2px solid #2046DA !important; }
+
+    .form-control, .form-control.select2 {
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #334155;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 2px solid #ced4da;
+        border-radius: 0.25rem;
+        box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+
+    body.skin-reverse.sidebar-mini .main-sidebar:after {
+        background-color: #2046DA !important; }
+
+    body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li.active > a {
+        color: #2046DA !important; }
+
+    body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li.active ul.dropdown-menu li.active a,
+    body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li ul.dropdown-menu li.active a {
+        color: #2046DA !important; }
+
+    body.skin-reverse .main-sidebar {
+        background-color: #2046DA !important; }
+
+    body.skin-reverse .main-sidebar .sidebar-menu li a:hover {
+        background-color: #2046DA !important; }
+    }
+
+    body.skin-reverse .main-sidebar .sidebar-menu li.active a,
+    body.skin-reverse .main-sidebar .sidebar-menu li.active a:hover,
+    body.skin-reverse .main-sidebar .sidebar-menu li.active ul.dropdown-menu li a:hover,
+    body.skin-reverse .main-sidebar .sidebar-menu li.active ul.dropdown-menu li a {
+        background-color: #2046DA !important; }
+
+    body.skin-reverse .main-sidebar .sidebar-menu li ul.dropdown-menu li a:hover {
+        background-color: #2046DA !important; }
+</style>
+    
+
+
+
+    <!--
+    |--------------------------------------------------------------------------
+    | YIELD STYLES
+    |--------------------------------------------------------------------------
+    -->
+        <style>
+        .dash-card-heading {
+            margin-right: -10px !important;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <div class="main-wrapper">
+        <div class="navbar-bg"></div>
+
+
+
+
+        <!--
+        |--------------------------------------------------------------------------
+        | INCLUDE MAIN NAVBAR
+        |--------------------------------------------------------------------------
+        -->
+        <nav class="navbar navbar-expand-lg main-navbar">
+    <!--
+    |--------------------------------------------------------------------------
+    | LINK NAVBAR
+    |--------------------------------------------------------------------------
+    -->
+    <ul class="navbar-nav mr-auto">
+        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+        <li><a title="Visit Profile" target="_blank"  href="https://websolutionus.com/cc/profiletop/profile/john"  class="nav-link nav-link-lg"><i class="fas fa-globe"></i></a></li>
+    </ul>
+
+
+
+
+    <!--
+    |--------------------------------------------------------------------------
+    | PROFILE NAVBAR
+    |--------------------------------------------------------------------------
+    -->
+    <ul class="navbar-nav navbar-right">
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                                    <img src="https://websolutionus.com/cc/profiletop/assets/img/profile/user/1640143987-84349.png" alt="Profile Image" class="rounded-circle mr-1">
+                                <div class="d-sm-none d-lg-inline-block">{{fname}}</div>
+            </a>
+
+
+
+
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-title">Logged in 1 second ago</div>
+                <a href="https://websolutionus.com/cc/profiletop/user/profile" class="dropdown-item has-icon">
+                    <i class="fas fa-user-alt"></i> Profile
+                </a>
+                                <a href="https://websolutionus.com/cc/profiletop/user/change-password" class="dropdown-item has-icon">
+                    <i class="fas fa-key"></i> Change Password
+                </a>
+                                <a href="/signout" class="dropdown-item has-icon text-danger">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+
+
+
+        <!--
+        |--------------------------------------------------------------------------
+        | INCLUDE MAIN SIDEBAR
+        |--------------------------------------------------------------------------
+        -->
+        <!--
+|--------------------------------------------------------------------------
+| MAIN SIDEBAR
+|--------------------------------------------------------------------------
+-->
+<div class="main-sidebar">
+    <aside id="sidebar-wrapper">
+        <!--
+        |--------------------------------------------------------------------------
+        | LOGO
+        |--------------------------------------------------------------------------
+        -->
+                                    <div class="sidebar-brand">
+                    <a href="https://websolutionus.com/cc/profiletop/user/dashboard">{{fname}}</a>
+                </div>
+                <div class="sidebar-brand sidebar-brand-sm">
+                    <a href="https://websolutionus.com/cc/profiletop/user/dashboard">
+                                                                            <img src="https://websolutionus.com/cc/profiletop/assets/img/profile/user/1640143987-84349.png" class="rounded-circle" alt="Image" width="30">
+                                            </a>
+                </div>
+                    
+
+
+
+        <!--
+        |--------------------------------------------------------------------------
+        | MENU
+        |--------------------------------------------------------------------------
+        -->
+        <ul class="sidebar-menu mb-5 pb-5">
+            <!--
+            |--------------------------------------------------------------------------
+            | DASHBOARD
+            |--------------------------------------------------------------------------
+            -->
+            <li class="active">
+                <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/dashboard">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+
+
+
+            <!--
+            |--------------------------------------------------------------------------
+            | INTERFACE MENU SECTION
+            |--------------------------------------------------------------------------
+            -->
+            <li class="menu-header">INTERFACE</li>
+
+
+
+
+            <!--
+            |--------------------------------------------------------------------------
+            | SETTING
+            |--------------------------------------------------------------------------
+            -->
+            <li class="">
+                <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/setting">
+                    <i class="fas fa-cog"></i>
+                    <span>Setting</span>
+                </a>
+            </li>
+
+
+
+
+            <!--
+            |--------------------------------------------------------------------------
+            | QR BUILDER
+            |--------------------------------------------------------------------------
+            -->
+                                            <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/qr-builder">
+                        <i class="fas fa-qrcode"></i>
+                        <span>QR Builder</span>
+                    </a>
+                </li>
+                            
+
+
+
+            <!--
+            |--------------------------------------------------------------------------
+            | MEMBERSHIP
+            |--------------------------------------------------------------------------
+            -->
+            <li class="">
+                <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/membership">
+                    <i class="fas fa-gift"></i>
+                    <span>Membership</span>
+                </a>
+            </li>
+
+
+
+
+            <!--
+            |--------------------------------------------------------------------------
+            | TEMPLATE
+            |--------------------------------------------------------------------------
+            -->
+                                            <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/template">
+                        <i class="fas fa-pager"></i>
+                        <span>Template</span>
+                    </a>
+                </li>
+                            
+
+
+
+            <!--
+            |--------------------------------------------------------------------------
+            | BIO
+            |--------------------------------------------------------------------------
+            -->
+            <li class="">
+                <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/bio">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Bio</span>
+                </a>
+            </li>
+
+
+
+
+            <!--
+            |--------------------------------------------------------------------------
+            | ACTIVITY
+            |--------------------------------------------------------------------------
+            -->
+            <li class="">
+                <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/activity">
+                    <i class="fas fa-bolt"></i>
+                    <span>Activity</span>
+                </a>
+            </li>
+
+
+
+
+            <!--
+            |--------------------------------------------------------------------------
+            | ABOUT
+            |--------------------------------------------------------------------------
+            -->
+            <li class="">
+                <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/about">
+                    <i class="fas fa-info"></i>
+                    <span>About</span>
+                </a>
+            </li>
+
+
+
+
+            
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | EXPERIENCE
+                |--------------------------------------------------------------------------
+                -->
+                                <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/experience">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | SKILL
+                |--------------------------------------------------------------------------
+                -->
+                                <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/skill">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Skill</span>
+                    </a>
+                </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | SERVICE
+                |--------------------------------------------------------------------------
+                -->
+                                <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/service">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>Service</span>
+                    </a>
+                </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | JOB
+                |--------------------------------------------------------------------------
+                -->
+                                <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/job">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Job</span>
+                    </a>
+                </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | EDUCATION
+                |--------------------------------------------------------------------------
+                -->
+                                <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/education">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | PROJECT
+                |--------------------------------------------------------------------------
+                -->
+                                <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/project">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Project</span>
+                    </a>
+                </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | TESTIMONIAL
+                |--------------------------------------------------------------------------
+                -->
+                                <li class="">
+                    <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/testimonial">
+                        <i class="fas fa-quote-left"></i>
+                        <span>Testimonial</span>
+                    </a>
+                </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | SOCIAL LINK
+                |--------------------------------------------------------------------------
+                -->
+                                    <li class="">
+                        <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/social-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Social Link</span>
+                        </a>
+                    </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | BLOG
+                |--------------------------------------------------------------------------
+                -->
+                                <li class="nav-item dropdown ">
+                    <a href="#" class="nav-link has-dropdown"><i class="fas fa-edit"></i><span>Blog</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/blog/category">&mdash; Category</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/blog/blog">&mdash; Blog</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/blog/pending-comments">&mdash; Pending Comment</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/blog/approved-comments">&mdash; Approved Comment</a>
+                        </li>
+                    </ul>
+                </li>
+                
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | LANGUAGE
+                |--------------------------------------------------------------------------
+                -->
+                <li class="nav-item dropdown ">
+                    <a href="#" class="nav-link has-dropdown"><i class="fas fa-language"></i><span>Language</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/table-header-text">&mdash; Table Header Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/card-header-text">&mdash; Card Header Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/form-label-text">&mdash; Form Label Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/button-text">&mdash; Button Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/menu-section-text">&mdash; Menu Section Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/menu-text">&mdash; Menu Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/sub-menu-text">&mdash; Sub Menu Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/status-text">&mdash; Status Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/notification-text">&mdash; Notification Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/validation-error-text">&mdash; Validation Error Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/page-title-text">&mdash; Page Title Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/profile-menu-text">&mdash; Profile Menu Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/profile-text">&mdash; Profile Text</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/language/profile-section-text">&mdash; Profile Section Text</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+
+                <!--
+                |--------------------------------------------------------------------------
+                | CONTACT
+                |--------------------------------------------------------------------------
+                -->
+                                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-envelope"></i><span>Contact</span></a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/contact/message">&mdash; Contact Message</a>
+                            </li>
+                            <li class="">
+                                <a class="nav-link" href="https://websolutionus.com/cc/profiletop/user/contact/section-content">&mdash; Section Content</a>
+                            </li>
+                        </ul>
+                    </li>
+                
+
+
+
+                    </ul>
+    </aside>
+</div>
+
+
+
+
+        <!--
+        |--------------------------------------------------------------------------
+        | YIELD CONTENT
+        |--------------------------------------------------------------------------
+        -->
+
+
+
+
+
+
+        <div class="main-content">
+            <section class="section">
+                    <!--
+    |--------------------------------------------------------------------------
+    | SECTION HEADER
+    |--------------------------------------------------------------------------
+    -->
+    <div class="section-header">
+        <h1>Dashboard</h1>
+    </div>
+
+
+
+
+    <!--
+    |--------------------------------------------------------------------------
+    | EXPIRY ALERT MESSAGE
+    |--------------------------------------------------------------------------
+    -->
+    
+
+
+
+
+    <div class="row">
+
+
+
+
+        <div class="col-md-6">
+            <div class="card card-statistic-1 text-right bg-light">
+                <div class="card-icon bg-primary">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4 class="dash-card-heading"><a href="https://websolutionus.com/cc/profiletop/user/membership">Current Membership</a></h4>
+                    </div>
+                    <div class="card-body">
+                        <h2>{{ip}}</h2>
+                    </div>
+                </div>
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4 class="dash-card-heading"><a href="https://websolutionus.com/cc/profiletop/user/membership">Current Membership</a></h4>
+                    </div>
+                    <div class="card-body">
+                        <a href="/ipfind">Find ip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-md-6">
+            <div class="card card-statistic-1 text-right bg-light">
+                <div class="card-icon bg-success">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4 class="dash-card-heading"><a href="https://websolutionus.com/cc/profiletop/user/membership">Total Order</a></h4>
+                    </div>
+                    <div class="card-body">
+                        <h2>29</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+            </section>
+        </div>
+
+
+
+
+
+
+        <!--
+        |--------------------------------------------------------------------------
+        | INCLUDE MAIN FOOTER
+        |--------------------------------------------------------------------------
+        -->
+        <footer class="main-footer">
+    <div class="footer-left">
+                    Copyright 2022 All Rights Reserved.
+            </div>
+    <div class="footer-right">
+        1.0
+    </div>
+</footer>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| SCRIPTS
+|--------------------------------------------------------------------------
+-->
+
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/jquery-3.6.0.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/popper.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/bootstrap.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/jquery.nicescroll.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/moment.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/select2.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/bootstrap-colorpicker.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/ckeditor/ckeditor.js"></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/jquery.dataTables.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/dataTables.bootstrap4.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/sweetalert2@11.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/iziToast.min.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/jquery-ui.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/js/bootstrap-tagsinput.js" type="text/javascript" ></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/js/iconpicker.js"></script>
+
+
+<!--
+|--------------------------------------------------------------------------
+| INCLUDE USER JS
+|--------------------------------------------------------------------------
+-->
+<script>
+    (function ($) {
+        'use strict'
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK USER CURRENT PASSWORD IS CORRECT OR NOT
+        |--------------------------------------------------------------------------
+        */
+        $('#current_password').on("keyup", function () {
+            let current_password = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/check-current-password';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: { current_password:current_password },
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==false) {
+                        $("#checkCurrentPassword").html("<font color='red'>Current Password is Incorrect</font>");
+                    } else if (resp==true) {
+                        $("#checkCurrentPassword").html("<font color='green'>Current Password is Correct</font>");
+                    }
+                }, error: function (error) {
+                    alert(error);
+                }
+            });
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK ABOUT ITEM TITLE EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#aboutItemTitleExists').hide();
+        $('#title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/check-about-item-title';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {title:title},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp=="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#aboutItemTitleExists').show();
+                        $('#aboutItemTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#about_item_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/check-about-item-title';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {title:title},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp=="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#aboutItemTitleExists').show();
+                        $('#aboutItemTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#aboutItemTitleExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+
+        $('#edit_about_item_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/edit-check-about-item-title';
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            let aboutItemId = $("#about_item_id").val();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {title:title, _token : csrf , about_item_id : aboutItemId},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp=="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#aboutItemTitleExists').show();
+                        $('#aboutItemTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#aboutItemTitleExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+
+        $('#title').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#aboutItemTitleExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK EXPERIENCE NAME EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#experienceNameExists').hide();
+        $('#experience_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/experience/check-experience-name';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {name:name},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp.result == 1) {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#experienceNameExists').show();
+                        $('#experienceNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                    }
+                    if(resp.result == 0){
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#experienceNameExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#edit_experience_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/experience/edit-check-experience-name';
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            let experienceId = $("#experience_id").val();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {name:name , _token : csrf , experience_id : experienceId},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp.result == 1) {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#experienceNameExists').show();
+                        $('#experienceNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                    }
+                    if(resp.result == 0){
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#experienceNameExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#name').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#experienceNameExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE ABOUT ITEM STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateAboutItemStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let item_id = $(this).attr("item_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-about-item-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, item_id:item_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] == 0) {
+                        $("#item-"+item_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] == 1) {
+                        $("#item-"+item_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE EXPERIENCE STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateExperienceStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let experience_id = $(this).attr("experience_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-experience-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, experience_id:experience_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] == 0) {
+                        $("#experience-"+experience_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] == 1) {
+                        $("#experience-"+experience_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK SKILL NAME EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#skillNameExists').hide();
+        $('#skill_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/skill/check-skill-name';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {name:name},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp === "exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#skillNameExists').show();
+                        $('#skillNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#skillNameExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#edit_skill_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/skill/edit-check-skill-name';
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            let skillId = $("#skill_id").val();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {name:name , _token : csrf , skill_id:skillId},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp === "exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#skillNameExists').show();
+                        $('#skillNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#skillNameExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#name').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#skillNameExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE SKILL STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateSkillStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let skill_id = $(this).attr("skill_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-skill-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, skill_id:skill_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] == 0) {
+                        $("#skill-"+skill_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] == 1) {
+                        $("#skill-"+skill_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK SERVICE TITLE EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#serviceTitleExists').hide();
+        $('#service_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/service/check-service-title';
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: { title : title, },
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp === "exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#serviceTitleExists').show();
+                        $('#serviceTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#serviceTitleExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#edit_service_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/service/edit-check-service-title';
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            let service_id = $("#service_id").val();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: { title : title, _token : csrf, service_id : service_id },
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp === "exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#serviceTitleExists').show();
+                        $('#serviceTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#serviceTitleExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#title').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#serviceTitleExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE SERVICE STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateServiceStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let service_id = $(this).attr("service_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-service-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, service_id:service_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] == 0) {
+                        $("#service-"+service_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] == 1) {
+                        $("#service-"+service_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK JOB TITLE EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#jobTitleExists').hide();
+        $('#title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/job/check-job-title';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {title:title},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp === "exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#jobTitleExists').show();
+                        $('#jobTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#job_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/job/check-job-title';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {title:title},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp === "exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#jobTitleExists').show();
+                        $('#jobTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#jobTitleExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#edit_job_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/job/edit-check-job-title';
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            let job_id = $("#job_id").val();
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: { title : title, job_id : job_id, _token : csrf},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp === "exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#jobTitleExists').show();
+                        $('#jobTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#jobTitleExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+
+
+        $('#title').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#jobTitleExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE JOB STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateJobStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let job_id = $(this).attr("job_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-job-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, job_id:job_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#job-"+job_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] === 1) {
+                        $("#job-"+job_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK EDUCATION TITLE EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#educationTitleExists').hide();
+        $('#education_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/education/check-education-title';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {title:title},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp=="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#educationTitleExists').show();
+                        $('#educationTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#educationTitleExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#educationTitleExists').hide();
+        $('#edit_education_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/education/edit-check-education-title';
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            let education_id = $("#education_id").val();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: { title : title, education_id : education_id, _token : csrf},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp=="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#educationTitleExists').show();
+                        $('#educationTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#educationTitleExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#title').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#educationTitleExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE EDUCATION STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateEducationStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let education_id = $(this).attr("education_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-education-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, education_id:education_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#education-"+education_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] === 1) {
+                        $("#education-"+education_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK PROJECT NAME EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#projectNameExists').hide();
+        $('#project_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/project/check-project-name';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {name:name},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp=="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#projectNameExists').show();
+                        $('#projectNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#projectNameExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#edit_project_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/project/edit-check-project-name';
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            let project_id = $("#project_id").val();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: { name : name, project_id : project_id, _token : csrf },
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp=="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#projectNameExists').show();
+                        $('#projectNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#projectNameExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#name').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#projectNameExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE PROJECT STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateProjectStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let project_id = $(this).attr("project_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-project-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, project_id:project_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#project-"+project_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] === 1) {
+                        $("#project-"+project_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK TESTIMONIAL NAME EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#testimonialNameExists').hide();
+        $('#testimonial_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/testimonial/check-testimonial-name';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {name:name},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#testimonialNameExists').show();
+                        $('#testimonialNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#testimonialNameExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#edit_testimonial_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/testimonial/edit-check-testimonial-name';
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            let testimonial_id = $("#testimonial_id").val();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: { name : name, testimonial_id : testimonial_id, _token : csrf },
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#testimonialNameExists').show();
+                        $('#testimonialNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#testimonialNameExists').hide();
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#name').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#testimonialNameExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE TESTIMONIAL STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateTestimonialStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let testimonial_id = $(this).attr("testimonial_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-testimonial-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, testimonial_id:testimonial_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#testimonial-"+testimonial_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] === 1) {
+                        $("#testimonial-"+testimonial_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK CATEGORY NAME EXISTS
+        |--------------------------------------------------------------------------
+        */
+
+        $('#categoryNameExists').hide();
+        $('#blog_cat_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/category/check-category-name';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {name:name},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#categoryNameExists').show();
+                        $('#categoryNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                        $('#blog_cat_slug').attr('disabled', true);
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#categoryNameExists').hide();
+                        $('#categoryNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                        $('#blog_cat_slug').attr('disabled', false);
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#name').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#categoryNameExists').hide();
+            $('#slug').attr('disabled', false);
+        });
+
+
+        $('#edit_blog_cat_name').on('keyup', function () {
+            let name = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/category/edit-check-category-name';
+            let categoryId = $("#category_id").val();
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {name:name,category_id:categoryId,_token:csrf},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#categoryNameExists').show();
+                        $('#categoryNameExists').html("<small style='color: #e10000; font-weight: bolder'>Name Already Exists</small>");
+                        $('#edit_blog_cat_slug').attr('disabled', true);
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#categoryNameExists').hide();
+                        $('#edit_blog_cat_slug').attr('disabled', false);
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK CATEGORY SLUG EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#categorySlugExists').hide();
+        $('#blog_cat_slug').on('keyup', function () {
+            let slug = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/category/check-category-slug';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {slug:slug},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#categorySlugExists').show();
+                        $('#categorySlugExists').html("<small style='color: #e10000; font-weight: bolder'>Slug Already Exists</small>");
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#slug').on('keyup', function () {
+            let slug = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/category/check-category-slug';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {slug:slug},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#categorySlugExists').show();
+                        $('#categorySlugExists').html("<small style='color: #e10000; font-weight: bolder'>Slug Already Exists</small>");
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#slug').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#categorySlugExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE CATEGORY STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateCategoryStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let category_id = $(this).attr("category_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/update-category-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, category_id:category_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#category-"+category_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] === 1) {
+                        $("#category-"+category_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK BLOG TITLE EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#blogTitleExists').hide();
+        $('#blog_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/blog/check-blog-title';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {title:title},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#blogTitleExists').show();
+                        $('#blogTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                        $('#slug').attr('disabled', true);
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#blogTitleExists').hide();
+                        $('#slug').attr('disabled', false);
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#edit_blog_title').on('keyup', function () {
+            let title = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/blog/edit-check-blog-title';
+            let blogId = $("#blog_id").val();
+            let csrf = "bmN1MYtfs8gdMfOtLlsPX0FfawugSkVMCXQO5onI";
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {title:title,_token:csrf,blog_id:blogId},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#blogTitleExists').show();
+                        $('#blogTitleExists').html("<small style='color: #e10000; font-weight: bolder'>Title Already Exists</small>");
+                        $('#slug').attr('disabled', true);
+                    }else{
+                        $('#btnSubmit').attr('disabled', false);
+                        $('#blogTitleExists').hide();
+                        $('#slug').attr('disabled', false);
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+
+
+        $('#title').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#blogTitleExists').hide();
+            $('#slug').attr('disabled', false);
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK BLOG SLUG EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#blogSlugExists').hide();
+        $('#slug').on('keyup', function () {
+            let slug = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/blog/check-blog-slug';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {slug:slug},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#blogSlugExists').show();
+                        $('#blogSlugExists').html("<small style='color: #e10000; font-weight: bolder'>Slug Already Exists</small>");
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#slug').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#blogSlugExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE BLOG STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateBlogStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let blog_id = $(this).attr("blog_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/update-blog-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, blog_id:blog_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#blog-"+blog_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] === 1) {
+                        $("#blog-"+blog_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE SOCIAL LINK STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateSocialLinkStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let link_id = $(this).attr("link_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-social-link-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, link_id:link_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#link-"+link_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] === 1) {
+                        $("#link-"+link_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECK PROFILE SLUG EXISTS
+        |--------------------------------------------------------------------------
+        */
+        $('#profileSlugExists').hide();
+        $('#profile_slug').on('keyup', function () {
+            let profile_slug = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/user/check-profile-slug';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {profile_slug:profile_slug},
+                success: function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp==="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#profileSlugExists').show();
+                        $('#profileSlugExists').html("<small style='color: #e10000; font-weight: bolder'>Slug Already Exists</small>");
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#profile_slug').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#profileSlugExists').hide();
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE TEMPLATE STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateTemplateStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let template_id = $(this).attr("template_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-template-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, template_id:template_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    $("#template-"+template_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                    location.reload(true);
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE COMMENT STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateUserBlogCommentStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let user_blog_comment_id = $(this).attr("user_blog_comment_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/blog/update-comment-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, user_blog_comment_id:user_blog_comment_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#user-blog-comment-"+user_blog_comment_id).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                        setTimeout(function () {
+                            location.reload();
+                        }, 5000);
+                    }else if (resp['status'] === 1) {
+                        $("#user-blog-comment-"+user_blog_comment_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Comment has been Approved Successfully',
+                        });
+                        setTimeout(function () {
+                            location.reload();
+                        }, 5000);
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE PROFILE SECTION STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateProfileSectionStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let profile_section = $(this).attr("profile_section");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-profile-section-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, profile_section:profile_section},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    if (resp['status'] === 0) {
+                        $("#profile-section-"+profile_section).html("<i class='fa fa-toggle-off text-danger status-icon' status='Inactive'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status In-Active Successfully',
+                        });
+                    }else if (resp['status'] === 1) {
+                        $("#profile-section-"+profile_section).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                        iziToast.success({
+                            position: 'topRight',
+                            message: 'Status Active Successfully',
+                        });
+                    }
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE LAYOUT STATUS
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".updateUserLayoutStatus", function () {
+            let status = $(this).children("i").attr("status");
+            let layout_id = $(this).attr("layout_id");
+            let url = 'https://websolutionus.com/cc/profiletop/user/update-layout-status';
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data:{status:status, layout_id:layout_id},
+                success:function (resp) {
+                    if(resp.demo){
+                        iziToast.error({
+                            position: 'topRight',
+                            message: "This Is Demo Version. You Can Not Change Anything",
+                        });
+                    }
+                    $("#layout-"+layout_id).html("<i class='fa fa-toggle-on text-success status-icon' status='Active'></i>");
+                    location.reload(true);
+                },error:function () {
+                    alert("Error");
+                }
+            });
+
+        });
+
+
+
+
+    })(jQuery);
+</script>
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| TEMPLATE JS
+|--------------------------------------------------------------------------
+-->
+<script src="https://websolutionus.com/cc/profiletop/assets/js/scripts.js"></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/js/custom.js"></script>
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| PAGE SPECIFIC JS
+|--------------------------------------------------------------------------
+-->
+<script src="https://websolutionus.com/cc/profiletop/assets/js/page/index-0.js"></script>
+<script src="https://websolutionus.com/cc/profiletop/assets/js/stisla.js"></script>
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| LTR JS
+|--------------------------------------------------------------------------
+-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/ltr.js"></script>
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| RTL JS
+|--------------------------------------------------------------------------
+-->
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| TOASTR JS
+|--------------------------------------------------------------------------
+-->
+<script>
+            iziToast.success({
+            position: 'topRight',
+            message: "Login Successfully",
+        });
+    
+    
+    
+    
+    </script>
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| CONFIRM DELETE JS
+|--------------------------------------------------------------------------
+-->
+<script>
+    (function ($) {
+        'use strict'
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CONFIRM DELETE
+        |--------------------------------------------------------------------------
+        */
+        $(document).on("click", ".confirmDelete", function () {
+
+            var isDemo="demo"
+            if(isDemo == 'demo'){
+                iziToast.error({
+                    position: 'topRight',
+                    message: "This Is Demo Version. You Can Not Change Anything",
+                });
+                return;
+            }
+
+            let record = $(this).attr("record");
+            let recordid = $(this).attr("recordid");
+
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: 'btn btn-success btn-lg ml-2',
+                    cancelButton: 'btn btn-danger btn-lg'
+                },
+                buttonsStyling: false
+            })
+
+            swalWithBootstrapButtons.fire({
+                title: 'Are You Sure?',
+                text: 'You will note be able to revert this',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, Delete It',
+                cancelButtonText: 'No, Cancel',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location='https://websolutionus.com/cc/profiletop/user/delete'+"-"+record+"/"+recordid;
+                } else if (
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Cancelled',
+                        'This Data is Safe',
+                        'error'
+                    )
+                }
+            })
+        });
+    })(jQuery);
+</script>
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| OTHER SCRIPTS
+|--------------------------------------------------------------------------
+-->
+<script>
+    (function ($) {
+        'use strict'
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | DATATABLES
+        |--------------------------------------------------------------------------
+        */
+        $('#datatables').DataTable();
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | SELECT2
+        |--------------------------------------------------------------------------
+        */
+        $('.select2').select2();
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | COLOR PICKER
+        |--------------------------------------------------------------------------
+        */
+        $('#colorpicker').colorpicker({
+            horizontal: true
+        });
+
+        $('.colorpickerinput').colorpicker();
+
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | TEXTAREA
+        |--------------------------------------------------------------------------
+        */
+        $('textarea').each(function(){
+            $(this).val($(this).val().trim());
+        });
+
+        CKEDITOR.replaceAll( 'summernote' );
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | DATE PICKER
+        |--------------------------------------------------------------------------
+        */
+        $( "#datepicker, #datepicker2" ).datepicker();
+
+
+
+
+        (async () => {
+            const response = await fetch('https://websolutionus.com/cc/profiletop/assets/js/bootstrap5.json')
+            const result = await response.json()
+            const iconpicker = new Iconpicker(document.querySelector(".iconpicker"), {
+                icons: result,
+                showSelectedIn: document.querySelector(".selected-icon"),
+                defaultValue: 'bi-alarm',
+            });
+            iconpicker.set() // Set as empty
+            iconpicker.set('bi-alarm') // Reset with a value
+        })()
+
+    })(jQuery);
+</script>
+
+
+
+
+<!--
+|--------------------------------------------------------------------------
+| YIELD SCRIPTS
+|--------------------------------------------------------------------------
+-->
+<div class="js-cookie-consent cookie-consent">
+
+    <span class="cookie-consent__message">
+        Your experience on this site will be improved by allowing cookies.
+    </span>
+
+    <button class="js-cookie-consent-agree cookie-consent__agree">
+        Allow cookies
+    </button>
+
+</div>
+
+    <script>
+
+        window.laravelCookieConsent = (function () {
+
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = 'websolutionus.com';
+
+            function consentWithCookies() {
+                setCookie('laravel_cookie_consent', COOKIE_VALUE, 7300);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/'
+                    + ';samesite=lax';
+            }
+
+            if (cookieExists('laravel_cookie_consent')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,5 @@
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'rashiofficial434@gmail.com'
+EMAIL_HOST_PASSWORD = '9526295523'
+EMAIL_PORT = 587

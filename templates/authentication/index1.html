@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h3>Welcome to Rashid's project!</h3><br/>
+
+    <h3>Hello {{fname}}!</h3>
+    <h4>You're successfully logged in.</h4>
+    <button type="submit"><a href="/signout">SignOut</a></button>
+    <button type="submit"><a href="/portfolio">Portfolio</a></button>
+    <textarea id="rawcode">
+		&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;portfolio 1&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Hello {{fname}}&lt;/h1&gt; &lt;/body&gt; &lt;/html&gt;
+    </textarea><br>
+    <button onclick="download()">Download</button>
+
+<script>
+    function download(){
+	var text = document.getElementById("rawcode").value;
+	//var text = document.getElementsByTagName("xmp")[0].value;
+	text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+	var blob = new Blob([text], { type: "text/plain"});
+	var anchor = document.createElement("a");
+	anchor.download = "portfolio.html";
+	anchor.href = window.URL.createObjectURL(blob);
+	anchor.target ="_blank";
+	anchor.style.display = "none"; // just to be safe!
+	document.body.appendChild(anchor);
+	anchor.click();
+	document.body.removeChild(anchor);
+}
+</script>
+</body>
+</html>

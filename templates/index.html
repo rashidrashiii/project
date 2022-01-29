@@ -1,0 +1,1560 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>Home page - Profile Top</title>
+    <meta name="description" content="Home page - Profile Top">
+
+    <link rel="shortcut icon"  href="https://websolutionus.com/cc/profiletop/assets/img/favicon.png" >
+
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/iziToast.min.css" type="text/css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/all.min.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/slick.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/barfiller.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/venobox.min.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/select2.min.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/aos.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/style.css">
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/front-end/css/responsive.css">
+
+    <link rel="stylesheet" href="https://websolutionus.com/cc/profiletop/assets/user-profile/css/bootstrap-icons/font/bootstrap-icons.css" type="text/css">
+
+    
+    <style>
+    body::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #c1c1c1;
+    }
+
+    .right_menu {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 100px;
+    }
+
+    .js-cookie-consent {
+        display: none !important;
+    }
+
+    .btn-full-w {
+        width: 100% !important;
+    }
+    .btn-h1 {
+        height: 50px !important;
+        padding-top: 12px !important;
+        font-size: 1rem !important;
+        color: #ffffff !important;
+    }
+    .note-area {
+        padding: 10px 20px;
+        border: 1px solid #e3e2e2;
+        border-radius: 5px;
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #646464;
+        background: rgba(227, 226, 226, 0.3);
+        font-family: 'Roboto', sans-serif;
+    }
+    .note-area h6 {
+        font-size: 1.1rem;
+        margin-bottom: 18px !important;
+    }
+    .note-area p {
+        font-size: .9rem;
+        margin-bottom: 5px !important;
+    }
+    .text-thanks {
+        color: #efefef !important;
+    }
+    @media (max-width: 576px) {
+        .btn-h1 {
+            height: 45px !important;
+            padding-top: 11px !important;
+            font-size: .9rem !important;
+            color: #ffffff !important;
+        }
+    }
+    @media (max-width: 400px) {
+        .btn-h1 {
+            height: 36px !important;
+            padding-top: 10px !important;
+            font-size: .6rem !important;
+            font-weight: bold;
+            color: #ffffff !important;
+        }
+    }
+    .top-border {
+        border-top: 5px solid #2344ca !important;
+    }
+    .top-border:hover {
+        border-bottom: 5px solid #2344ca !important;
+    }
+    .member_price p {
+        text-align: left;
+    }
+    .single_blog h4 a {
+        color: #07123b;
+    }
+    .single_blog:hover h4 a{
+        color: #ffffff;
+    }
+    .reply {
+        margin-top: 10px;
+    }
+    .read-more {
+        background-color: #f6f6f6;
+        color: #6c757d;
+        border-radius: 4px;
+        font-size: .8rem;
+        padding: 2px 5px 2px 5px;
+        float: right;
+        margin-top: -38px !important;
+    }
+            #subscribe .subscribe_bg {
+            background: url("https://websolutionus.com/cc/profiletop/assets/img/pages/subscriber/subscriber-banner.png") !important;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 5px;
+            padding: 70px 0px 62px 0px;
+        }
+                #testimonial {
+        background: url("https://websolutionus.com/cc/profiletop/assets/img/testimonial/testimonial-banner.png") !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        padding: 70px 0px 62px 0px !important;
+    }
+    
+    .wpcc-privacy {
+        display: none !important;
+    }
+</style>
+
+            <style>
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: #2046DA !important;
+    }
+
+    .text-primary {
+        color: #2046DA !important;
+    }
+
+    .read_btn {
+        background: #2046DA;
+        color: #ffffff;
+    }
+
+    .hire_btn {
+        color: #2046DA !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    .hire_btn:hover{
+        color: #2046DA !important;
+    }
+
+    .small_heading {
+        color: #2046DA !important;
+    }
+
+    .main_menu li a:hover,
+    .main_menu li a.active{
+        color: #2046DA !important;
+    }
+
+    .right_menu .signin {
+        color: #2046DA !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    .right_menu .signin a:hover{
+        background: #2046DA !important;
+    }
+
+    .right_menu .signin a:hover,
+    .right_menu .signin a.active {
+        background: #2046DA !important;
+        color: #fff !important;
+    }
+
+    .right_menu .dropdown {
+        background: #2046DA !important;
+    }
+
+    .right_menu .dropdown:hover{
+        background: #2046DA !important;
+    }
+
+    @media  screen and (max-width: 992px) {
+        .nav-item .dropdown-menu {
+            min-width: 200px !important;
+            max-width: 350px !important;
+            margin: 0px auto !important;
+        }
+    }
+
+    .dropdown-menu li a {
+        font-size: .9rem;
+        margin-left: -1px !important;
+    }
+
+    .dropdown-menu li a:focus, .dropdown-menu li a:hover {
+        background-color: #2046DA !important;
+        color: #ffffff !important;
+    }
+
+    .work_text ul li::after {
+        color: #2046DA !important;
+    }
+
+    #work_part li i {
+        background: #2046DA !important;
+    }
+
+
+    .single_card:hover{
+        background: #2046DA !important;
+    }
+
+    .single_card span {
+        background: rgba(32,70,218, 0.2);
+    }
+
+
+    .single_card span::after {
+        background: #07123b;
+    }
+
+    .single_card:hover span {
+        background: rgba(32,70,218, 0.6);
+    }
+
+    #pricing_part .nav-tabs .nav-link {
+        color: #2046DA !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    #pricing_part .nav-tabs .l_border{
+        border-right: 1px solid #2046DA !important;
+    }
+
+    #pricing_part .nav-tabs .nav-item.show .nav-link,
+    #pricing_part .nav-tabs .nav-link:hover,
+    #pricing_part .nav-tabs .nav-link.active {
+        background-color: #2046DA !important;
+        border-color: #2046DA !important;
+    }
+
+    .single_price::after {
+        background: #2046DA !important;
+    }
+
+    .single_price h4 {
+        color: #2046DA !important;
+    }
+
+    .single_price h5 {
+        color: #2046DA !important;
+    }
+
+    .single_price a {
+        background: #2046DA !important;
+    }
+
+    .single_price:hover{
+        background: #2046DA !important;
+    }
+
+    .single_price:hover a{
+        color: #2046DA !important;
+    }
+
+    .single_price a:hover {
+        background: #2046DA !important;
+    }
+
+
+    .single_blog h4 {
+        color: #2046DA !important;
+    }
+
+    .single_blog:hover{
+        background: #2046DA !important;
+    }
+
+    .single_blog:hover .read_btn {
+        background: #fff;
+        color: #2046DA !important;
+    }
+
+    .single_blog .read_btn:hover {
+        background: #2046DA;
+        color: #fff !important;
+    }
+
+    .footer_icon li a:hover{
+        color: #2046DA !important;
+    }
+
+    .footer_link li a:hover {
+        color: #2046DA !important;
+    }
+
+    .footer_bottom p a{
+        color: #2046DA !important;
+    }
+
+    .scroll_btn {
+        background: #2046DA !important;
+    }
+
+    .bread_overlay{
+        background: rgba(32,70,218, 0.8) !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #2046DA;
+        background-color: #e7f1ff
+    }
+
+    .user_menu1 {
+        background: #2046DA !important;
+    }
+
+    .user_menu1 ul li a::before {
+        background: #2046DA !important;
+    }
+
+    .single_user::before {
+        background: #2046DA !important;
+    }
+
+    .user_icon li a{
+        color: #2046DA !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    .user_icon li a:hover {
+        color: #2046DA !important;
+        border-color: #2046DA !important;
+    }
+
+    .user_img_area .hire_btn:hover {
+        background: #2046DA !important;
+    }
+
+    .user_text h4 {
+        color: #2046DA !important;
+    }
+
+    .user_line {
+        color: #2046DA !important;
+    }
+
+    .user_text .user_details {
+        color: #2046DA !important;
+    }
+
+    #user_exp_skill h4 {
+        color: #2046DA !important;
+    }
+
+    .single_service span {
+        background: #2046DA !important;
+    }
+
+    .single_service h5 {
+        color: #2046DA !important;
+    }
+
+    .single_service:hover{
+        background: #2046DA !important;
+    }
+
+    .single_service:hover span{
+        background: #2046DA !important;
+    }
+
+    .single_service:hover .read_btn{
+        color: #2046DA !important;
+    }
+
+    .single_service .read_btn:hover {
+        background: #2046DA !important;
+    }
+
+    .exp_text span:hover {
+        background: #2046DA !important;
+    }
+
+    .single_img span{
+        background: #2046DA !important;
+    }
+
+    .portfolio_item h5 {
+        color: #2046DA !important;
+    }
+
+    .portfolio_item h4 {
+        color: #2046DA !important;
+    }
+
+    .portfolio_item:hover h4{
+        border-color: #2046DA !important;
+    }
+
+    .single_review i{
+        color: #2046DA !important;
+    }
+
+    .single_review h4 {
+        color: #2046DA !important;
+    }
+
+    .single_review h5 {
+        color: #2046DA !important;
+    }
+
+    .about .single_counter span {
+        color: #2046DA !important;
+    }
+
+    .subs_form form button {
+        background: #2046DA !important;
+    }
+
+    .accordion_area .accordion-header {
+        color: #2046DA !important;
+    }
+
+    .form-check-input:focus {
+        border-color: #2046DA !important;
+    }
+
+    .login_form .reg_forget .color{
+        color: #2046DA !important;
+    }
+
+
+    #member_pricing .nav-tabs .nav-link::before{
+        background: #2046DA !important;
+    }
+
+    #member_pricing .nav-tabs .nav-item.show .nav-link,
+    #member_pricing .nav-tabs .nav-link.active {
+        color: #2046DA !important;
+    }
+
+    .member_price {
+        border-bottom: 5px solid #2046DA;
+    }
+
+    .member_price::after {
+        background: rgba(32,70,218, 0.15);
+    }
+
+    .member_price:hover h4,
+    .member_price:hover h5,
+    .member_price:hover span{
+        color: #ffff !important;
+    }
+
+    .member_price h4 {
+        color: #2046DA !important;
+    }
+
+    .member_price h5 {
+        color: #2046DA !important;
+    }
+
+    .member_price span {
+        color: #2046DA !important;
+    }
+
+    .member_price a {
+        color: #2046DA !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    .member_price .btn-h1 {
+        color: #ffffff !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    .member_price:hover::after {
+        background: #2046DA !important;
+    }
+
+    .member_price:hover a {
+        background: #2046DA !important;
+        color: #fff !important;
+    }
+
+    .member_price a:hover {
+        background: #2046DA !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    .top-border {
+        border-top: 5px solid #2046DA !important;
+    }
+    .top-border:hover {
+        border-bottom: 5px solid #2046DA !important;
+    }
+    .member_price p {
+        text-align: left ;
+    }
+
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+        background-color: #2046DA;
+        color: white;
+    }
+
+    .single_blog h4 a {
+        color: #2046DA;
+    }
+
+    .sidebar_line span {
+        color: #2046DA !important;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #2046DA !important;
+    }
+
+    .right_user img{
+        border: 2px solid #2046DA !important;
+    }
+
+
+    .right_user_link li a:hover {
+        color: #2046DA !important;
+    }
+
+    .right_user:hover{
+        background: #2046DA !important;
+    }
+
+    .right_user:hover .read_btn{
+        background: #2046DA !important;
+    }
+
+
+
+    #pagination .page-item.active .page-link {
+        background-color: #2046DA;
+    }
+
+    #pagination .page-item .page-link:hover {
+        background-color: #2046DA !important;
+    }
+
+    #pagination .page-link {
+        color: #2046DA;
+        border: 1px solid #2046DA !important;
+    }
+
+    .right_user_img {
+        border: 3px solid #2046DA !important;
+    }
+
+    .right_user_list:hover{
+        background: #2046DA !important;
+    }
+
+    .right_user_list:hover .read_btn{
+        background: #2046DA !important;
+    }
+
+    .topbar_tab p {
+        color: #2046DA !important;
+    }
+
+    .topbar_tab span {
+        color: #2046DA !important;
+    }
+
+    .user2_link li i {
+        border: 1px solid #2046DA !important;
+        color: #2046DA !important;
+    }
+
+    .user2_link li i::after {
+        background: #2046DA !important;
+    }
+
+    .user_2_bottom  .read_btn {
+        color: #2046DA !important;
+    }
+
+    .main_blog_text a{
+        color: #2046DA !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    .main_blog_text a:hover{
+        background: #2046DA !important;
+    }
+
+    .blog_business h4 {
+        color: #2046DA !important;
+    }
+
+    .blog_business ul li {
+        color: #2046DA !important;
+    }
+
+    .blog_business ul li::after {
+        background: #2046DA !important;
+    }
+
+    .blockquot {
+        border-left: 10px solid #2046DA !important;
+    }
+
+    .blockquot span {
+        color: #2046DA !important;
+    }
+
+    .left_btn_area span {
+        background: #2046DA !important;
+    }
+
+    .comm_text h5 {
+        color: #2046DA !important;
+    }
+
+    .comm_bottom h3 span {
+        color: #2046DA !important;
+    }
+
+    .comment_input .form-check label {
+        color: #2046DA !important;
+    }
+
+    .card_img p {
+        color: #2046DA !important;
+    }
+
+    .blog_search input {
+        border: 1px solid #2046DA !important;
+        color: #2046DA !important;
+    }
+
+    .blog_search button {
+        background: #2046DA !important;
+    }
+
+    .categorie h3::after{
+        background: #2046DA !important;
+    }
+
+    .categorie ul li a i{
+        color: #2046DA !important;
+    }
+
+    .categorie ul li a:hover{
+        color: #2046DA !important;
+    }
+
+    .gal_img_overlay {
+        background: #2046DA !important;
+    }
+
+    .free_call a {
+        background: #2046DA !important;
+    }
+
+    #user_menu_3 .menu_btn {
+        background: #2046DA !important;
+    }
+
+    .user_2 h3 {
+        color: #2046DA !important;
+    }
+
+    .user_2 p {
+        color: #2046DA !important;
+    }
+
+    .user_2_text a,
+    .user_2_text p {
+        color: #2046DA !important;
+    }
+
+    .user_2_link li:nth-child(1) a{
+        color: #2046DA !important;
+    }
+
+    .user_2_link li:nth-child(2) a{
+        color: #2046DA !important;
+    }
+
+    .user_2_link li:nth-child(4) a{
+        color: #2046DA !important;
+    }
+
+    .user_text_2 h4 {
+        color: #2046DA !important;
+    }
+
+    .user_2_bar .single_bar p {
+        color: #2046DA !important;
+    }
+
+    .service_2 .single_service span {
+        background: #2046DA !important;
+    }
+
+    .service_2 .single_service h5 {
+        color: #2046DA !important;
+    }
+
+    .service_2 .read_btn {
+        background: #2046DA !important;
+    }
+
+    .service_2 .single_service:hover .serial {
+        color: #2046DA !important;
+    }
+
+    .service_2 .single_service:hover span {
+        color: #2046DA !important;
+    }
+
+    .single_review_2 {
+        background: #2046DA !important;
+        box-shadow: 12px 12px 0px 0px #2046DA !important;
+    }
+
+    .menu_icon {
+        background: #2046DA !important;
+    }
+
+    .side_menu {
+        background: #2046DA !important;
+    }
+
+    .side_menu .close_icon {
+        background: #2046DA !important;
+    }
+
+    .user_banner_link li a:hover {
+        color: #2046DA !important;
+    }
+
+    .banner_btn {
+        color: #2046DA !important;
+    }
+
+    .banner_btn:hover {
+        background: #2046DA !important;
+        border-color: #2046DA !important;
+    }
+
+    .user_counter span {
+        background: #2046DA !important;
+    }
+
+    .user_counter h4 {
+        color: #2046DA !important;
+    }
+
+    .user_counter:hover span{
+        background: #2046DA !important;
+    }
+
+    .user_counter:hover h4{
+        color: #2046DA !important;
+    }
+
+    #user_service {
+        background: #2046DA !important;
+    }
+
+    .user_content a:hover{
+        color: #2046DA !important;
+    }
+
+    .resume_area .single_heading {
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #2046DA !important;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .resume_area .details {
+        color: #2046DA !important;
+    }
+
+    .resume_column h5 {
+        color: #2046DA !important;
+    }
+
+    .resume_column:hover{
+        background: #2046DA !important;
+    }
+
+    .user_single_text {
+        background: #2046DA !important;
+    }
+
+    .user_clients_text h5 {
+        color: #2046DA !important;
+    }
+
+    .user_clients_text h3 {
+        color: #2046DA !important;
+    }
+
+    .user_clients_text span {
+        color: #2046DA !important;
+    }
+
+    #user_testimonial .slick-dots li button {
+        background: #2046DA !important;
+        border: 1px solid #2046DA !important;
+    }
+
+    #user_testimonial .slick-dots li button::after {
+        background: #2046DA !important;
+    }
+
+    #user_contact h4 {
+        color: #2046DA !important;
+    }
+
+    .user_contact_add a, .user_contact_add p {
+        color: #2046DA !important;
+    }
+
+    .user_footer_bottom {
+        background: #2046DA !important;
+    }
+
+    .user_footer_link ul li a:hover{
+        color: #2046DA !important;
+    }
+
+</style>
+    
+        <style>
+                    #banner {
+            background: url(https://websolutionus.com/cc/profiletop/assets/img/pages/home/hero/hero-banner.png) !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            padding: 150px 0px 200px 0px !important;
+        }
+                        #card_part {
+            background: url(https://websolutionus.com/cc/profiletop/assets/img/pages/home/service/service-banner.png) !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            padding: 98px 0px 80px 0px;
+            </style>
+</head>
+
+<body>
+    <!--==========================
+           MENU PART START
+    ===========================-->
+    <nav class="navbar navbar-expand-lg main_menu">
+    <div class="container p-0">
+        <a class="navbar-brand" href="https://websolutionus.com/cc/profiletop">
+             <img id="main_logo" src="https://websolutionus.com/cc/profiletop/assets/img/logo/logo.png" alt="logo">         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="far fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://websolutionus.com/cc/profiletop">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://websolutionus.com/cc/profiletop/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://websolutionus.com/cc/profiletop/pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://websolutionus.com/cc/profiletop/users">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://websolutionus.com/cc/profiletop/blog">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://websolutionus.com/cc/profiletop/faqs">Faqs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://websolutionus.com/cc/profiletop/contact-us">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-capitalize" href="https://websolutionus.com/cc/profiletop/pages/privacy-policy">Privacy Policy</a></li>
+                        <li><a class="dropdown-item text-capitalize" href="https://websolutionus.com/cc/profiletop/pages/terms-and-conditions">Terms &amp; Conditions</a></li>
+                                                                                                </ul>
+                </li>
+            </ul>
+            <ul class="right_menu">
+                                    <li class="nav-item signin">
+                        <a class="nav-link " href="/signup">Registration</a>
+                    </li>
+                    <li class="nav-item signin left-2">
+                        <a class="nav-link " href="/signin">Login</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</nav>
+    <!--==========================
+           MENU PART END
+    ===========================-->
+
+
+    <!--==========================
+        CONTENT START
+    ===========================-->
+        <!--==========================
+        BANNER PART START
+    ===========================-->
+            <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-7">
+                    <div class="banner_text">
+                        <h1> Create Your Digital Business Profile. </h1>
+                        <p> Lorem Ipsum is simply dummy text of the printing and has been the industry&#039;s standard dummy text ever since printer took a galley </p>
+                                                    <a class="common_btn_1" href="https://www.facebook.com/">
+                                Sign up now
+                                <i class="far fa-chevron-double-right"></i>
+                            </a>
+                                                                            <a class="common_btn" href="https://www.facebook.com/d">
+                                Get your page now
+                                <i class="far fa-chevron-double-right"></i>
+                            </a>
+                                            </div>
+                </div>
+                <div class="col-xl-5 col-md-5 m-auto">
+                    <div class="banner_img">
+                                                    <img src="https://websolutionus.com/cc/profiletop/assets/img/pages/home/hero/hero.png" alt="mobile" class="img-fluid w-100">
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--==========================
+        BANNER PART END
+    ===========================-->
+
+
+
+    <!--==========================
+         WORK PART START
+    ===========================-->
+            <div id="work_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-5" data-aos="fade-up-right">
+                        <div class="work_img">
+                                                            <img src="https://websolutionus.com/cc/profiletop/assets/img/pages/home/work/work.png" alt="work_logo" class="img-fluid w-100">
+                                                    </div>
+                    </div>
+                    <div class="col-xl-4 col-md-7 offset-xl-1" data-aos="fade-up-left">
+                        <div class="work_text">
+                            <h3 class="small_heading"> How it works? </h3>
+                            <h2 class="medium_heading"> Best Digital Business Profile Solution. </h2>
+                            <p><p>  There are many variations of passages of Lorem Ipsum available, but the 
+majority have suffered alteration in some form, by injected humour, or 
+randomised words which</p>
+
+<ul><li>Get more customers</li><li>Create business Profile</li><li>Share your link</li></ul></p>
+                                                            <a class="read_btn" href="https://www.facebook.com/">learn more</a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--==========================
+         WORK PART END
+    ===========================-->
+
+
+
+    <!--==========================
+           CARD PART START
+    ===========================-->
+            <div id="card_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 text-center">
+                        <div class="heading_area">
+                            <h3 class="small_heading"> Why Digital Business Profile? </h3>
+                            <h2 class="medium_heading"> Digital Profile Features </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_area">
+                    <div class="row">
+                                                                                <div class="col-xl-3 col-sm-6 col-lg-3" data-aos="fade-up">
+                                <div class="single_card text-center">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-left-square" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.096 3.146a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768l4.096-4.097z"/>
+</svg></span>
+                                    <h4>Create Digital Business Profile</h4>
+                                    <p>There are many variations of passages Lorem Ipsum available,</p>
+                                </div>
+                            </div>
+                                                        <div class="col-xl-3 col-sm-6 col-lg-3" data-aos="fade-up">
+                                <div class="single_card text-center">
+                                    <span><i class="bi-arrows-move"></i></span>
+                                    <h4>Faster Loading</h4>
+                                    <p>There are many variations of passages Lorem Ipsum available,There are many variations</p>
+                                </div>
+                            </div>
+                                                        <div class="col-xl-3 col-sm-6 col-lg-3" data-aos="fade-up">
+                                <div class="single_card text-center">
+                                    <span><i class="bi-person-bounding-box"></i></span>
+                                    <h4>Clean UI Design</h4>
+                                    <p>There are many variations of passages Lorem Ipsum available,There are many variations</p>
+                                </div>
+                            </div>
+                                                        <div class="col-xl-3 col-sm-6 col-lg-3" data-aos="fade-up">
+                                <div class="single_card text-center">
+                                    <span><i class="bi-lightbulb"></i></span>
+                                    <h4>Unique Link</h4>
+                                    <p>There are many variations of passages Lorem Ipsum available,There are many variations</p>
+                                </div>
+                            </div>
+                                                        <div class="col-xl-3 col-sm-6 col-lg-3" data-aos="fade-up">
+                                <div class="single_card text-center">
+                                    <span><i class="bi-nut"></i></span>
+                                    <h4>Modern Theme</h4>
+                                    <p>There are many variations of passages Lorem Ipsum available,There are many variations</p>
+                                </div>
+                            </div>
+                                                        <div class="col-xl-3 col-sm-6 col-lg-3" data-aos="fade-up">
+                                <div class="single_card text-center">
+                                    <span><i class="bi-person-square"></i></span>
+                                    <h4>Business Hours</h4>
+                                    <p>There are many variations of passages Lorem Ipsum available,There are many variations</p>
+                                </div>
+                            </div>
+                                                        <div class="col-xl-3 col-sm-6 col-lg-3" data-aos="fade-up">
+                                <div class="single_card text-center">
+                                    <span><i class="bi-toggles2"></i></span>
+                                    <h4>WhatsApp Enabled</h4>
+                                    <p>There are many variations of passages Lorem Ipsum available,There are many variations</p>
+                                </div>
+                            </div>
+                                                        <div class="col-xl-3 col-sm-6 col-lg-3" data-aos="fade-up">
+                                <div class="single_card text-center">
+                                    <span><i class="bi-shield-fill-check"></i></span>
+                                    <h4>Payment Details</h4>
+                                    <p>There are many variations of passages Lorem Ipsum available,There are many variations</p>
+                                </div>
+                            </div>
+                                                                        </div>
+                </div>
+            </div>
+        </div>
+        <!--==========================
+           CARD PART END
+    ===========================-->
+
+
+
+    <!--==========================
+         PROFILE PART START
+    ===========================-->
+            <section id="profile_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-8 col-lg-7 m-auto text-center">
+                        <div class="heading_area">
+                            <h3 class="small_heading">User profile templates</h3>
+                            <h2 class="medium_heading">Multiple templates for user</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                                                                        <div class="col-xl-4 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                                <div class="profile_item">
+                                    <img src="https://websolutionus.com/cc/profiletop/assets/img/vcard-template/1639704989-60077.png" alt="VCard Template" class="img-fluid w-100">
+                                    <span></span>
+                                </div>
+                            </div>
+                                                    <div class="col-xl-4 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                                <div class="profile_item">
+                                    <img src="https://websolutionus.com/cc/profiletop/assets/img/vcard-template/1639704977-27242.png" alt="VCard Template" class="img-fluid w-100">
+                                    <span></span>
+                                </div>
+                            </div>
+                                                    <div class="col-xl-4 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                                <div class="profile_item">
+                                    <img src="https://websolutionus.com/cc/profiletop/assets/img/vcard-template/1639704999-13592.png" alt="VCard Template" class="img-fluid w-100">
+                                    <span></span>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+        </section>
+        <!--==========================
+         PROFILE PART END
+    ===========================-->
+
+
+
+    <!--==========================
+      TESTIMONIAL PART START
+    ===========================-->
+            <section id="testimonial">
+    <div class="container">
+        <div class="row test_slider">
+                                                <div class="col-12">
+                        <div class="row">
+                            <div class="col-xl-3 col-12 col-md-3 col-lg-2">
+                                <div class="clients_img">
+                                                                            <img src="https://websolutionus.com/cc/profiletop/assets/img/testimonial/robot-smoti-1639282377.jpg" class="img-fluid" alt="jhon deo">
+                                                                    </div>
+                            </div>
+                            <div class="col-xl-7 col-12 col-md-9 col-lg-9">
+                                <div class="clients_text text-white">
+                                    <h5>Testimonial</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
+                                    <div class="clients_rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h3>ilara munni</h3>
+                                    <span>graphic designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-xl-3 col-12 col-md-3 col-lg-2">
+                                <div class="clients_img">
+                                                                            <img src="https://websolutionus.com/cc/profiletop/assets/img/testimonial/sumit-saha-1639282347.jpg" class="img-fluid" alt="jhon deo">
+                                                                    </div>
+                            </div>
+                            <div class="col-xl-7 col-12 col-md-9 col-lg-9">
+                                <div class="clients_text text-white">
+                                    <h5>Testimonial</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
+                                    <div class="clients_rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h3>sumit saha</h3>
+                                    <span>full stak Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-xl-3 col-12 col-md-3 col-lg-2">
+                                <div class="clients_img">
+                                                                            <img src="https://websolutionus.com/cc/profiletop/assets/img/testimonial/robot-smoti-1639282340.jpg" class="img-fluid" alt="jhon deo">
+                                                                    </div>
+                            </div>
+                            <div class="col-xl-7 col-12 col-md-9 col-lg-9">
+                                <div class="clients_text text-white">
+                                    <h5>Testimonial</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
+                                    <div class="clients_rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h3>sinthia johar</h3>
+                                    <span>UI/UX Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+    </div>
+</section>
+        <!--==========================
+       TESTIMONIAL PART END
+    ===========================-->
+
+
+
+    <!--==========================
+         BLOG PART START
+    ===========================-->
+            <section id="blog_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 m-auto text-center">
+                        <div class="heading_area">
+                            <h3 class="small_heading"> Our Blog </h3>
+                            <h2 class="medium_heading"> Our Recent Blog </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_area blog_area_2">
+                    <div class="row">
+                                                                                                                                                        <div class="col-xl-4 col-sm-6 col-lg-4" data-aos="fade-up">
+                                        <div class="single_blog">
+                                                                                            <a href="https://websolutionus.com/cc/profiletop/blog/how-to-create-a-portfolio">
+                                                    <img src="https://websolutionus.com/cc/profiletop/assets/img/blog/1639283281-41987.jpg" alt="Blog Image" class="img-fluid w-100">
+                                                </a>
+                                                                                        <div class="flex justify-content-between">
+                                                <span><i class="fal fa-calendar-alt"></i> 10 December, 2021</span>
+                                                <span><i class="fas fa-user"></i> by super admin</span>
+                                            </div>
+                                            <h4><a href="https://websolutionus.com/cc/profiletop/blog/how-to-create-a-portfolio">How to create a Portfolio</a></h4>
+                                            <p><p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+industry. Lorem Ipsum has been...</p></p>
+                                            <a class="read_btn" href="https://websolutionus.com/cc/profiletop/blog/how-to-create-a-portfolio">Read More <i class="far fa-chevron-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                                                                                                                                                <div class="col-xl-4 col-sm-6 col-lg-4" data-aos="fade-up">
+                                        <div class="single_blog">
+                                                                                            <a href="https://websolutionus.com/cc/profiletop/blog/maecenas-tincidunt-vehicula">
+                                                    <img src="https://websolutionus.com/cc/profiletop/assets/img/blog/1639284712-6636.jpg" alt="Blog Image" class="img-fluid w-100">
+                                                </a>
+                                                                                        <div class="flex justify-content-between">
+                                                <span><i class="fal fa-calendar-alt"></i> 10 December, 2021</span>
+                                                <span><i class="fas fa-user"></i> by super admin</span>
+                                            </div>
+                                            <h4><a href="https://websolutionus.com/cc/profiletop/blog/maecenas-tincidunt-vehicula">Maecenas tincidunt vehicula</a></h4>
+                                            <p><p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+industry. Lorem Ipsum has been...</p></p>
+                                            <a class="read_btn" href="https://websolutionus.com/cc/profiletop/blog/maecenas-tincidunt-vehicula">Read More <i class="far fa-chevron-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                                                                                                                                                <div class="col-xl-4 col-sm-6 col-lg-4" data-aos="fade-up">
+                                        <div class="single_blog">
+                                                                                            <a href="https://websolutionus.com/cc/profiletop/blog/how-to-create-a-resume">
+                                                    <img src="https://websolutionus.com/cc/profiletop/assets/img/blog/1639284734-37936.jpg" alt="Blog Image" class="img-fluid w-100">
+                                                </a>
+                                                                                        <div class="flex justify-content-between">
+                                                <span><i class="fal fa-calendar-alt"></i> 10 December, 2021</span>
+                                                <span><i class="fas fa-user"></i> by super admin</span>
+                                            </div>
+                                            <h4><a href="https://websolutionus.com/cc/profiletop/blog/how-to-create-a-resume">How to create a Resume</a></h4>
+                                            <p><p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+industry. Lorem Ipsum has been...</p></p>
+                                            <a class="read_btn" href="https://websolutionus.com/cc/profiletop/blog/how-to-create-a-resume">Read More <i class="far fa-chevron-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                                                                                        </div>
+                </div>
+            </div>
+        </section>
+        <!--==========================
+         BLOG PART END
+    ===========================-->
+
+
+
+    <!--==========================
+       SUBSCRIBE PART START
+    ===========================-->
+            <section id="subscribe">
+    <div class="container">
+        <div class="subscribe_bg">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-12 col-sm-12 col-md-8 col-xxl-3">
+                    <div class="subs_text">
+                        <h3>Need Help For Get Started.</h3>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-12 col-sm-12 col-md-8 col-xxl-5">
+                    <div class="subs_form">
+                        <form action="https://websolutionus.com/cc/profiletop/create-subscriber" method="POST">
+                            <input type="hidden" name="_token" value="0fVNA9tfWpFgbdwMcG0tojQxfDWacIODlAF5Y3fv">                            <input type="email" name="email" id="email" placeholder="Enter email address" required>
+                            <button id="btnSubmit" type="submit">subscribe now <i class="fal fa-long-arrow-right"></i> </button>
+                            <span id="statusSubscriber" class="mt-2"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!--==========================
+       SUBSCRIBE PART END
+    ===========================-->
+    <!--==========================
+        CONTENT END
+    ===========================-->
+
+
+    <!--==========================
+         FOOTER PART START
+    ===========================-->
+    <footer class="foot_mar">
+    <div class="container">
+        <div class="row text-white">
+            <div class="col-xl-3 col-sm-12 col-lg-3">
+                <div class="footer_text">
+                    <h3>About Us</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500s.</p>
+                    <ul class="footer_icon">
+                                                                                    <li><a href="https://www.linkedin.com/"><i class="bi-linkedin"></i></a></li>
+                                                            <li><a href="https://www.facebook.com"><i class="bi-facebook"></i></a></li>
+                                                            <li><a href="https://twitter.com/"><i class="bi-twitter"></i></a></li>
+                                                            <li><a href="https://www.youtube.com"><i class="bi-youtube"></i></a></li>
+                                                            <li><a href="https://www.google.com"><i class="bi-google"></i></a></li>
+                                                                        </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-4 col-lg-3 offset-xl-1">
+                <div class="footer_text">
+                    <h3>My Account</h3>
+                    <ul class="footer_link">
+                                                                                    <li><a href="/signin"><i class="far fa-chevron-double-right"></i> Login</a></li>
+                                                            <li><a href="/signup"><i class="far fa-chevron-double-right"></i> Register</a></li>
+                                                            <li><a href="pricing"><i class="far fa-chevron-double-right"></i> Pricing</a></li>
+                                                                        </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-4 col-lg-3 offset-xl-1">
+                <div class="footer_text">
+                    <h3>Helpful Links</h3>
+                    <ul class="footer_link">
+                                                                                    <li><a href="faqs"><i class="far fa-chevron-double-right"></i> FAQ</a></li>
+                                                            <li><a href="users"><i class="far fa-chevron-double-right"></i> Users</a></li>
+                                                            <li><a href="contact-us"><i class="far fa-chevron-double-right"></i> Contact Us</a></li>
+                                                                        </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-sm-4 col-lg-3 offset-xl-1">
+                <div class="footer_text">
+                    <h3>Information</h3>
+                    <ul class="footer_link">
+                                                                                    <li><a href="pages/terms-and-conditions"><i class="far fa-chevron-double-right"></i> T&amp;C</a></li>
+                                                            <li><a href="pages/privacy-policy"><i class="far fa-chevron-double-right"></i> Privacy Policy</a></li>
+                                                            <li><a href="about"><i class="far fa-chevron-double-right"></i> About Us</a></li>
+                                                                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Copyright 2021 Profile Top All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!--==========================
+         FOOTER PART END
+    ===========================-->
+
+
+    <!--=============SCROLL BTN==============-->
+    <div class="scroll_btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!--=============SCROLL BTN==============-->
+
+
+    <!--jquery library js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/Font-Awesome.js"></script>
+    <!--slick js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/slick.min.js"></script>
+    <!--barfiller js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/jquery.barfiller.js"></script>
+    <!--venobox js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/venobox.min.js"></script>
+    <!--counter js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/jquery.waypoints.min.js"></script>
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/jquery.countup.min.js"></script>
+    <!--nice select js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/select2.min.js"></script>
+    <!--aos js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/aos.js"></script>
+
+    <!--main/custom js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/main.js"></script>
+
+            <!-- LTR JS -->
+        <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/ltr.js"></script>
+    
+    
+    <script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/sweetalert2@11.js" type="text/javascript" ></script>
+    <!-- iziToast -->
+    <script src="https://websolutionus.com/cc/profiletop/assets/user-profile/js/iziToast.min.js" type="text/javascript" ></script>
+    <script>
+    
+    
+    
+    
+    </script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84213520-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84213520-6');
+    </script>
+    
+    <script src="https://websolutionus.com/cc/profiletop/assets/js/cookieconsent.min.js" type="text/javascript" ></script>
+
+    
+
+        <script>
+        window.addEventListener("load",function(){
+            window.wpcc.init({
+                "border":"thin",
+                "corners":"small",
+                "colors":{"popup":{"background":"#1c1f4b","text":"#ffffff","border":"#afb3e4"},
+                "button":{"background":"#ffffff","text":"#000000"}},
+                "position":"bottom",
+                "margin":"none",
+                "content":{
+                    "message":"This website uses cookies to ensure you get the best experience on our website.",
+                    "button":"Accept"
+                }
+            })
+        });
+    </script>
+    
+    
+    <!--main/custom js-->
+    <script src="https://websolutionus.com/cc/profiletop/assets/front-end/js/main.js"></script>
+
+    <script>
+    (function ($) {
+        'use strict'
+
+        $('#statusSubscriber').hide();
+        $('#email').on('keyup', function () {
+            let email = $(this).val();
+            let url = 'https://websolutionus.com/cc/profiletop/check-subscriber-email';
+            let errorText = "Email already Exists!";
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: {email:email},
+                success: function (resp) {
+                    if (resp=="exists") {
+                        $('#btnSubmit').attr('disabled', true);
+                        $('#statusSubscriber').show();
+                        $('#statusSubscriber').html("<small style='color: #ce0000; font-weight: bolder'>"+errorText+"</small>");
+                    }
+                }, error: function () {
+                    alert("Error");
+                }
+            });
+        })
+
+        $('#email').on('keyup', function () {
+            $('#btnSubmit').attr('disabled', false);
+            $('#statusSubscriber').hide();
+        });
+
+    })(jQuery);
+</script>
+    <div class="js-cookie-consent cookie-consent">
+
+    <span class="cookie-consent__message">
+        Your experience on this site will be improved by allowing cookies.
+    </span>
+
+    <button class="js-cookie-consent-agree cookie-consent__agree">
+        Allow cookies
+    </button>
+
+</div>
+
+    <script>
+
+        window.laravelCookieConsent = (function () {
+
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = 'websolutionus.com';
+
+            function consentWithCookies() {
+                setCookie('laravel_cookie_consent', COOKIE_VALUE, 7300);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/'
+                    + ';samesite=lax';
+            }
+
+            if (cookieExists('laravel_cookie_consent')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+
+</body>
+
+</html>
+
